@@ -17,9 +17,7 @@
     ],
     "require": {
         "symfony/symfony": "2.1.*",
-        "sensio/generator-bundle": "dev-master"
-    },
-    "suggest": {
+        "sensio/generator-bundle": "dev-master",
         "twitter/bootstrap": "2.0.3"
     },
     "repositories": {
