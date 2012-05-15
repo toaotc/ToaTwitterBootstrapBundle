@@ -23,7 +23,7 @@
         "twitter/bootstrap": "2.0.3"
     },
     "repositories": {
-        "twitter-bootstrap": {
+        "twitter/bootstrap": {
             "package": {
                 "version": "2.0.3",
                 "name": "twitter/bootstrap",
