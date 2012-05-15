@@ -1,4 +1,4 @@
 ToaTwitterBootstrapBundle
 =========================
 
-Basic integration of twitters bootstrap into symfony2
+Basic integration of Twitter Bootstrap into Symfony2
