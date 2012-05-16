@@ -25,6 +25,7 @@
     "repositories": [
         {
             "type": "package",
+            "version": "v2.0.3",
             "package": {
                 "name": "twitter/bootstrap",
                 "dist": {
