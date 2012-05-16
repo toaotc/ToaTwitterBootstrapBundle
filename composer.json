@@ -25,11 +25,14 @@
         {
             "type": "package",
             "package": {
-                "version": "v2.0.3",
                 "name": "twitter/bootstrap",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3"
+                },
                 "source": {
+                    "type": "git",
                     "url": "https://github.com/twitter/bootstrap.git",
-                    "type": "vcs",
                     "reference": "v2.0.3"
                 }
             }
