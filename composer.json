@@ -24,12 +24,13 @@
     },
     "repositories": {
         {
+            "type": "package",
             "package": {
                 "version": "2.0.3",
                 "name": "twitter/bootstrap",
                 "source": {
                     "url": "https://github.com/twitter/bootstrap.git",
-                    "type": "git",
+                    "type": "vcs",
                     "reference": "v2.0.3"
                 }
             }
