@@ -4,6 +4,7 @@
     "description": "Basic integration of Twitter Bootstrap into Symfony2 [wip]",
     "keywords": ["code generation"],
     "license": "MIT",
+    "version": "master",
     "authors": [
         {
             "name": "Enrico Thies",
@@ -21,7 +22,7 @@
     "suggest": {
         "twitter/bootstrap": "v2.0.3"
     },
-    "repositories": {
+    "repositories": [
         {
             "type": "package",
             "package": {
@@ -37,7 +38,7 @@
                 }
             }
         }
-    },
+    ],
     "autoload": {
         "psr-0": {
             "Toa\\Bundle\\TwitterBootstrapBundle": ""
