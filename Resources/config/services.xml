@@ -4,17 +4,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
-    <parameters>
-        <parameter key="toa_twitter_bootstrap.example.class">Toa\Bundle\TwitterBootstrapBundle\Example</parameter>
-    </parameters>
-
     <services>
-        <service id="toa_twitter_bootstrap.example" class="%toa_twitter_bootstrap.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="toa_twitter_bootstrap.twig.globals" class="Toa\Bundle\TwitterBootstrapBundle\Extension\TwigGlobals">
+            <tag name="twig.extension" />
+            <argument type="service" id="service_container" />
         </service>
     </services>
-    -->
 </container>
