@@ -1,0 +1,23 @@
+{% if ('delete' in actions) and (not hide_delete) %}
+<form action="{{ "{{ path('"~ route_name_prefix ~"_delete', { 'id': entity.id }) }}" }}" method="post">
+    {{ '{{ form_widget(delete_form) }}' }}
+{% endif %}
+
+    <a class="btn" href="{{ "{{ path('"~ route_name_prefix ~"') }}" }}">
+        <i class="icon-th-list"></i>
+        {{ "{{ 'back to the list'|trans|capitalize }}" }}
+    </a>
+{% if ('edit' in actions) and (not hide_edit) %}
+    <a class="btn" href="{{ "{{ path('"~ route_name_prefix ~"_edit', { 'id': entity.id }) }}" }}">
+        <i class="icon-pencil"></i>
+        {{ "{{ 'edit'|trans|capitalize }}" }}
+    </a>
+{% endif %}
+
+{% if ('delete' in actions) and (not hide_delete) %}
+    <button class="btn btn-danger" type="submit">
+        <i class="icon-trash"></i>
+        {{ "{{ 'delete'|trans|capitalize }}" }}
+    </button>
+</form>
+{% endif %}
