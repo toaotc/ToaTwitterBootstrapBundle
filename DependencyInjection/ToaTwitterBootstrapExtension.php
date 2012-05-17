@@ -24,5 +24,7 @@ class ToaTwitterBootstrapExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+        $container->setParameter('toa_twitter_bootstrap', $config);
     }
 }
