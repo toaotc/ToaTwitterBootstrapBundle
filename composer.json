@@ -20,26 +20,8 @@
         "sensio/generator-bundle": "dev-master"
     },
     "suggest": {
-        "twitter/bootstrap": "v2.0.3"
+        "toa/twitter-bootstrap-sandbox-bundle": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "package",
-            "version": "v2.0.3",
-            "package": {
-                "name": "twitter/bootstrap",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3"
-                },
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/twitter/bootstrap.git",
-                    "reference": "v2.0.3"
-                }
-            }
-        }
-    ],
     "autoload": {
         "psr-0": {
             "Toa\\Bundle\\TwitterBootstrapBundle": ""
