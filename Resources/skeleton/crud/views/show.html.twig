@@ -1,5 +1,5 @@
-{{ "{% extends 'ToaTwitterBootstrapBundle::layout.html.twig' %}" }}
-{{ "{% block content %}" }}
+{{ "{% extends '" ~ toa_twitter_bootstrap.template ~ "' %}" }}
+{{ "{% block " ~ toa_twitter_bootstrap.block ~ " %}" }}
 
 <h1 class="page-header">{{ "{{ '" ~ entity ~ "'|trans }}" }}</h1>
 
@@ -10,9 +10,21 @@
         <tr>
             <th>{{ field|capitalize }}</th>
 
-        {%- if metadata.type in ['date', 'datetime'] %}
+        {%- if metadata.type in ['datetimetz', 'datetime'] %}
 
-            <td>{{ '{{ entity.'~ field|replace({'_': ''}) ~'|date(\'Y-m-d H:i:s\') }}' }}</td>
+            <td>{{ '{% if entity.'~ field|replace({'_': ''}) ~' %}{{ entity.'~ field|replace({'_': ''}) ~'|date(\'Y-m-d H:i:s\') }}{% endif %}' }}</td>
+
+        {%- elseif metadata.type == 'date' %}
+
+            <td>{{ '{% if entity.'~ field|replace({'_': ''}) ~' %}{{ entity.'~ field|replace({'_': ''}) ~'|date(\'Y-m-d\') }}{% endif %}' }}</td>
+
+        {%- elseif metadata.type == 'time' %}
+
+            <td>{{ '{% if entity.'~ field|replace({'_': ''}) ~' %}{{ entity.'~ field|replace({'_': ''}) ~'|date(\'H:i:s\') }}{% endif %}' }}</td>
+
+        {%- elseif metadata.type == 'boolean' %}
+
+            <td><i class="{{ '{{ entity.'~ field|replace({'_': ''}) ~' ? \'icon-check\' : \'\' }}' }}"></i></td>
 
         {%- else %}
 

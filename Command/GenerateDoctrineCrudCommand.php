@@ -11,7 +11,7 @@
 
 namespace Toa\Bundle\TwitterBootstrapBundle\Command;
 
-use Sensio\Bundle\GeneratorBundle\Generator\DoctrineCrudGenerator;
+use Toa\Bundle\TwitterBootstrapBundle\Generator\DoctrineCrudGenerator;
 use Sensio\Bundle\GeneratorBundle\Command\GenerateDoctrineCrudCommand as BaseGenerateDoctrineCrudCommand;
 
 /**
@@ -38,7 +38,7 @@ class GenerateDoctrineCrudCommand extends BaseGenerateDoctrineCrudCommand
     protected function getGenerator()
     {
         if (null === $this->generator) {
-            $this->generator = new DoctrineCrudGenerator($this->getContainer()->get('filesystem'), __DIR__.'/../Resources/skeleton/crud');
+            $this->generator = new DoctrineCrudGenerator($this->getContainer()->get('filesystem'), __DIR__.'/../Resources/skeleton/crud', $this->getContainer());
         }
 
         return $this->generator;

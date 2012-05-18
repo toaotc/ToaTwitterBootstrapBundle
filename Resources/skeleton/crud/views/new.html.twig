@@ -1,11 +1,21 @@
-<h1>{{ entity }} creation</h1>
+{{ "{% form_theme form 'ToaTwitterBootstrapBundle:Form:widgets.html.twig' %}" }}
 
-<form action="{{ "{{ path('"~ route_name_prefix ~"_create') }}" }}" method="post" {{ "{{ form_enctype(form) }}" }}>
+{{ "{% extends '" ~ toa_twitter_bootstrap.template ~ "' %}" }}
+{{ "{% block " ~ toa_twitter_bootstrap.block ~ " %}" }}
+
+<h1 class="page-header">{{ "{{ '" ~ entity ~ "'|trans }} {{ 'creation'|trans }}" }}</h1>
+
+<form class="form-horizontal" action="{{ "{{ path('"~ route_name_prefix ~"_create') }}" }}" method="post" {{ "{{ form_enctype(form) }}" }}>
     {{ "{{ form_widget(form) }}" }}
     <p>
-        <button type="submit">Create</button>
+        <button class="btn" type="submit">
+            <i class="icon-plus"></i>
+            {{ "{{ 'create'|trans|capitalize }}" }}
+        </button>
     </p>
 </form>
 
 {% set hide_edit, hide_delete = true, true %}
 {% include 'views/others/record_actions.html.twig' %}
+
+{{ "{% endblock %}" }}

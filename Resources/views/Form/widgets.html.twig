@@ -1,0 +1,38 @@
+{% extends 'form_div_layout.html.twig' %}
+
+{% block form_row %}
+{% spaceless %}
+    <div class="control-group{% if errors|length > 0 %} error{% endif %}">
+        {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' control-label')|trim}) %}
+        {{ form_label(form, label|default(null), { 'label_attr' : label_attr }) }}
+        {#
+        If the child is a compound form, the errors are rendered inside
+        the container. See also block form_rows.
+        #}
+
+        <div class="controls">
+            {{ form_widget(form) }}
+
+            {% if single_control %}
+                {{ form_errors(form) }}
+            {% endif %}
+        </div>
+    </div>
+{% endspaceless %}
+{% endblock form_row %}
+
+{% block form_errors %}
+{% spaceless %}
+    {% if errors|length > 0 %}
+    <p class="help-block">
+        {% for error in errors %}
+            <span>{{
+                error.messagePluralization is null
+                    ? error.messageTemplate|trans(error.messageParameters, 'validators')
+                    : error.messageTemplate|transchoice(error.messagePluralization, error.messageParameters, 'validators')
+            }}</span>
+        {% endfor %}
+    </p>
+    {% endif %}
+{% endspaceless %}
+{% endblock form_errors %}

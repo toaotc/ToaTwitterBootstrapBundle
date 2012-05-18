@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": "2.1.*",
+        "symfony/framework-bundle": "2.*",
         "sensio/generator-bundle": "dev-master"
     },
     "suggest": {
