@@ -15,7 +15,6 @@
         }
     ],
     "require": {
-        "symfony/framework-bundle": "2.*",
         "sensio/generator-bundle": "dev-master",
         "toa/twitter-bootstrap-bundle/Toa/Bundle/TwitterBootstrapBundle/Resources/public/twitterbootstrap": "v2.0.3"
     },
