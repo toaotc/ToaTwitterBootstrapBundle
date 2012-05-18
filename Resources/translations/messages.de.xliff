@@ -3,22 +3,26 @@
     <file source-language="en" datatype="plaintext" original="file.ext">
         <body>
             <trans-unit id="1">
+                <source>create</source>
+                <target>erstellen</target>
+            </trans-unit>
+            <trans-unit id="2">
                 <source>show</source>
                 <target>anzeigen</target>
             </trans-unit>
-            <trans-unit id="2">
+            <trans-unit id="3">
                 <source>edit</source>
                 <target>bearbeiten</target>
             </trans-unit>
-            <trans-unit id="3">
+            <trans-unit id="4">
                 <source>delete</source>
                 <target>löschen</target>
             </trans-unit>
-            <trans-unit id="4">
+            <trans-unit id="5">
                 <source>create a new entry</source>
                 <target>einen neuen Eintrag erstellen</target>
             </trans-unit>
-            <trans-unit id="5">
+            <trans-unit id="6">
                 <source>back to the list</source>
                 <target>zurück zur Liste</target>
             </trans-unit>
