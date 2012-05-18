@@ -4,7 +4,6 @@
     "description": "Basic integration of Twitter Bootstrap into Symfony2 [wip]",
     "keywords": ["code generation"],
     "license": "MIT",
-    "version": "master",
     "authors": [
         {
             "name": "Enrico Thies",
