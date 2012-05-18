@@ -17,11 +17,23 @@
     ],
     "require": {
         "symfony/framework-bundle": "2.*",
-        "sensio/generator-bundle": "dev-master"
+        "sensio/generator-bundle": "dev-master",
+        "toa/twitter-bootstrap-bundle/Toa/Bundle/TwitterBootstrapBundle/Resources/public/twitterbootstrap": "v2.0.3"
     },
-    "suggest": {
-        "toa/twitter-bootstrap-sandbox-bundle": "dev-master"
-    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "toa/twitter-bootstrap-bundle/Toa/Bundle/TwitterBootstrapBundle/Resources/public/twitterbootstrap",
+                "version": "v2.0.3",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/twitter/bootstrap.git",
+                    "reference": "v2.0.3"
+                }
+            }
+        }
+    ],
     "autoload": {
         "psr-0": {
             "Toa\\Bundle\\TwitterBootstrapBundle": ""

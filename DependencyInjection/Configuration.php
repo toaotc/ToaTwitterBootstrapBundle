@@ -23,7 +23,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->addDefaultsIfNotSet()
             ->children()
-                ->scalarNode('template')->defaultValue('ToaTwitterBootstrapSandboxBundle::layout.html.twig')->end()
+                ->scalarNode('template')->defaultValue('ToaTwitterBootstrapBundle::layout.html.twig')->end()
                 ->scalarNode('block')->defaultValue('content')->end()
             ->end()
         ;
