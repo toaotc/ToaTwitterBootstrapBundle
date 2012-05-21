@@ -17,7 +17,7 @@
     "require": {
         "sensio/generator-bundle": "dev-master"
     },
-    bin:[
+    "bin": [
       "git submodule update --init --recursive"
     ],
     "autoload": {
