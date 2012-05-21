@@ -18,9 +18,6 @@
     "require": {
         "sensio/generator-bundle": "dev-master"
     },
-    "bin": [
-      "git submodule update --init --recursive"
-    ],
     "autoload": {
         "psr-0": {
             "Toa\\Bundle\\TwitterBootstrapBundle": ""
