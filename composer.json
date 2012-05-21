@@ -15,22 +15,10 @@
         }
     ],
     "require": {
-        "sensio/generator-bundle": "dev-master",
-        "toa/twitter-bootstrap-bundle/Toa/Bundle/TwitterBootstrapBundle/Resources/public/twitterbootstrap": "v2.0.3"
+        "sensio/generator-bundle": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "toa/twitter-bootstrap-bundle/Toa/Bundle/TwitterBootstrapBundle/Resources/public/twitterbootstrap",
-                "version": "v2.0.3",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/twitter/bootstrap.git",
-                    "reference": "v2.0.3"
-                }
-            }
-        }
+    bin:[
+      "git submodule update --init --recursive"
     ],
     "autoload": {
         "psr-0": {
