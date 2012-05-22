@@ -3,22 +3,18 @@
 This Bundle serves basic integration of [Twitter Bootstrap](http://twitter.github.com/bootstrap)(v2.0.3) into [Symfony Standard Edition](https://github.com/symfony/symfony-standard).
 It also includes a CRUD-generator based on [SensioGeneratorBundle](https://github.com/sensio/SensioGeneratorBundle).
 
- 
+
 ## Installation
 
-#####Symfony < 2.0 (alpha)
-Add the following lines to your `deps` file and run `php bin/vendors update`.
+#####Symfony 2.1.*
+Add the package to the `composer.json` file and run `php composer.phar update`.
 
-	[ToaTwitterBootstrapBundle]
-	git=https://github.com/toaotc/ToaTwitterBootstrapBundle.git
-	target=/bundles/Toa/Bundle/TwitterBootstrapBundle
-
-Register the bundles namespace in `app/autoload.php`.
-
-	$loader->registerNamespaces(array(
-		// ...
-		'Toa' => __DIR__.'/../vendor/bundles',
-	));
+	{
+	    "require": {
+	        // ...
+	        "toa/twitter-bootstrap-bundle": "dev-master"
+	    }
+	}
 
 Register this bundle in the `app/AppKernel.php`
 
@@ -33,17 +29,6 @@ Register this bundle in the `app/AppKernel.php`
 	}
 
 
-#####Symfony >= 2.1 (beta)
-Add the package to the `composer.json` file and run `php composer.phar update`.
-
-	{
-	    "require": {
-	        // ...
-	        "toa/twitter-bootstrap-bundle": "dev-master"
-	    }
-	}
-
- 
 ## Configuration
 
 The default configuration can be overridden in `app/config/config.yml`:
