@@ -17,6 +17,9 @@
     "require": {
         "sensio/generator-bundle": "dev-master"
     },
+    "replace": {
+        "toa/twitter-bootstrap-sandbox-bundle": "dev-master"
+    },
     "autoload": {
         "psr-0": { "Toa\\Bundle\\TwitterBootstrapBundle": "" }
     },
