@@ -3,7 +3,6 @@
     "type": "symfony-bundle",
     "description": "Basic integration of Twitter Bootstrap into Symfony2 [wip]",
     "keywords": ["code generation"],
-    "version": "dev-master",
     "license": "MIT",
     "authors": [
         {
