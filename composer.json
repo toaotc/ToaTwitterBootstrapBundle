@@ -18,11 +18,8 @@
     "require": {
         "sensio/generator-bundle": "dev-master"
     },
-    "suggest": {},
     "autoload": {
-        "psr-0": {
-            "Toa\\Bundle\\TwitterBootstrapBundle": ""
-        }
+        "psr-0": { "Toa\\Bundle\\TwitterBootstrapBundle": "" }
     },
     "target-dir": "Toa/Bundle/TwitterBootstrapBundle"
 }
