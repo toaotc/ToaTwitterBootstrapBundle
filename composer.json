@@ -1,7 +1,7 @@
 {
     "name": "toa/twitter-bootstrap-bundle",
     "type": "symfony-bundle",
-    "description": "Basic integration of Twitter Bootstrap into Symfony2 [wip]",
+    "description": "Basic integration of Twitter Bootstrap into Symfony2",
     "keywords": ["code generation"],
     "license": "MIT",
     "authors": [
