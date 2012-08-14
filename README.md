@@ -1,6 +1,6 @@
 # ToaTwitterBootstrapBundle
 
-This Bundle serves basic integration of [Twitter Bootstrap](http://twitter.github.com/bootstrap)(v2.0.3) into [Symfony Standard Edition](https://github.com/symfony/symfony-standard).
+This Bundle serves basic integration of [Twitter Bootstrap](http://twitter.github.com/bootstrap)(v2.0.4) into [Symfony Standard Edition](https://github.com/symfony/symfony-standard).
 It also includes a CRUD-generator based on [SensioGeneratorBundle](https://github.com/sensio/SensioGeneratorBundle).
 
 
