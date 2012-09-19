@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "sensio/generator-bundle": "dev-master"
+        "sensio/generator-bundle": "2.1.x-dev"
     },
     "autoload": {
         "psr-0": { "Toa\\Bundle\\TwitterBootstrapBundle": "" }
