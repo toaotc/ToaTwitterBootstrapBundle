@@ -31,14 +31,17 @@ class GenerateDoctrineCrudCommand extends BaseGenerateDoctrineCrudCommand
         parent::configure();
         $this
             ->setName('toa:generate:twitter-bootstrap-crud')
-            ->setAliases(array())
-        ;
+            ->setAliases(array());
     }
 
     protected function getGenerator()
     {
         if (null === $this->generator) {
-            $this->generator = new DoctrineCrudGenerator($this->getContainer()->get('filesystem'), __DIR__.'/../Resources/skeleton/crud', $this->getContainer());
+            $this->generator = new DoctrineCrudGenerator(
+                $this->getContainer()->get('filesystem'),
+                __DIR__.'/../Resources/skeleton/crud',
+                $this->getContainer()
+            );
         }
 
         return $this->generator;
