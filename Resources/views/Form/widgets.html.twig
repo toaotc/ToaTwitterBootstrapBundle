@@ -36,3 +36,16 @@
     {% endif %}
 {% endspaceless %}
 {% endblock form_errors %}
+
+{% block choice_widget_expanded %}
+{% spaceless %}
+{#    <div {{ block('widget_container_attributes') }}>#}
+    {% for child in form %}
+        <label class="{{ multiple ? 'checkbox' : 'radio' }}">
+            {{ form_widget(child) }}
+            {{ child.vars.label|trans({}, translation_domain) }}
+        </label>
+    {% endfor %}
+{#    </div>#}
+{% endspaceless %}
+{% endblock choice_widget_expanded %}
