@@ -1,9 +1,13 @@
 {
     "name": "toa/twitter-bootstrap-bundle",
-    "type": "symfony-bundle",
     "description": "Basic integration of Twitter Bootstrap into Symfony2",
     "keywords": ["code generation"],
+    "type": "symfony-bundle",
     "license": "MIT",
+    "require": {
+        "sensio/generator-bundle": "2.1.x-dev"
+    },
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Enrico Thies",
@@ -14,9 +18,6 @@
             "homepage": "https://github.com/toaotc/ToaTwitterBootstrapBundle/contributors"
         }
     ],
-    "require": {
-        "sensio/generator-bundle": "2.1.x-dev"
-    },
     "autoload": {
         "psr-0": { "Toa\\Bundle\\TwitterBootstrapBundle": "" }
     },
