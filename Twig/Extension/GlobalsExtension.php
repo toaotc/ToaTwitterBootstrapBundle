@@ -1,16 +1,16 @@
 <?php
 
-namespace Toa\Bundle\TwitterBootstrapBundle\Extension;
+namespace Toa\Bundle\TwitterBootstrapBundle\Twig\Extension;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Twig extension
+ * GlobalsExtension
  *
  * @author Enrico Thies <enrico.thies@gmail.com>
  *
  */
-class TwigGlobals extends \Twig_Extension
+class GlobalsExtension extends \Twig_Extension
 {
     /** @var ContainerInterface $container */
     private $container;
