@@ -3,7 +3,7 @@
 namespace Toa\Bundle\TwitterBootstrapBundle\Generator;
 
 use Sensio\Bundle\GeneratorBundle\Generator\DoctrineCrudGenerator as BaseDoctrineCrudGenerator;
-use Toa\Bundle\TwitterBootstrapBundle\Extension\TwigGlobals;
+use Toa\Bundle\TwitterBootstrapBundle\Twig\Extension\GlobalsExtension;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -50,7 +50,7 @@ class DoctrineCrudGenerator extends BaseDoctrineCrudGenerator
             )
         );
 
-        $twig->addExtension(new TwigGlobals($this->container));
+        $twig->addExtension(new GlobalsExtension($this->container));
 
         return $twig->render($template, $parameters);
     }
