@@ -7,7 +7,6 @@
     "require": {
         "sensio/generator-bundle": ">=2.1,<2.3-dev"
     },
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Enrico Thies",
