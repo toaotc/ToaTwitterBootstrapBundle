@@ -1,3 +1,5 @@
+2.2-wip
+
 # ToaTwitterBootstrapBundle
 
 This Bundle serves basic integration of [Twitter Bootstrap](http://twitter.github.com/bootstrap)(v2.2.0) into [Symfony Standard Edition](https://github.com/symfony/symfony-standard).
