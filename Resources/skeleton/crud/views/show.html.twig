@@ -1,6 +1,6 @@
-{% include 'views/others/extends.twig.twig' %}
+{% include 'views/others/extends.twig' %}
 
-{% include 'views/others/block.twig.twig' %}
+{% include 'views/others/block.twig' %}
 
         <h1 class="page-header">{{ entity }}</h1>
 
@@ -33,6 +33,6 @@
         </table>
 
         {%- set hide_edit, hide_delete = false, false %}
-        {%- include 'views/others/record_actions.html.twig.twig' %}
+        {%- include 'views/others/record_actions.html.twig' %}
 
 {{ "{% endblock %}" }}

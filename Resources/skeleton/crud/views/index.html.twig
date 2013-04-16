@@ -1,6 +1,6 @@
-{% include 'views/others/extends.twig.twig' %}
+{% include 'views/others/extends.twig' %}
 
-{% include 'views/others/block.twig.twig' %}
+{% include 'views/others/block.twig' %}
 
         <h1 class="page-header">{{ entity }} {{ "{{ 'list'|trans }}" }}</h1>
 
@@ -39,7 +39,7 @@
                 {%- if loop.last %}
 
                     <td>
-                        {%- include "views/others/actions.html.twig.twig" %}
+                        {%- include "views/others/actions.html.twig" %}
                     </td>
 
                 {%- endif %}

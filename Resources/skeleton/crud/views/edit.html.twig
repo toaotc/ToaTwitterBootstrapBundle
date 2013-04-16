@@ -1,8 +1,8 @@
-{% include 'views/others/extends.twig.twig' %}
+{% include 'views/others/extends.twig' %}
 
-{% include 'views/others/form_theme.twig.twig' with {'form': 'edit_form'} %}
+{% include 'views/others/form_theme.twig' with {'form': 'edit_form'} %}
 
-{% include 'views/others/block.twig.twig' %}
+{% include 'views/others/block.twig' %}
 
         <h1 class="page-header">{{ entity }} {{ "{{ 'edit'|trans }}" }}</h1>
 
@@ -18,6 +18,6 @@
         </form>
 
         {%- set hide_edit, hide_delete = true, false %}
-        {%- include 'views/others/record_actions.html.twig.twig' %}
+        {%- include 'views/others/record_actions.html.twig' %}
 
 {{ "{% endblock %}" }}

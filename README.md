@@ -11,7 +11,7 @@ It includes a CRUD-generator based on [SensioGeneratorBundle](https://github.com
 	{
 	    "require": {
 	        // ...
-	        "toa/twitter-bootstrap-bundle": "dev-master",
+	        "toa/twitter-bootstrap-bundle": "2.1.*",
 	        // ...
 	    }
 	}
@@ -44,8 +44,8 @@ Default CRUD-templates reside in [Resources/skeleton/crud]() that can be overrid
 The base-templates of [SensioGeneratorBundle](https://github.com/sensio/SensioGeneratorBundle) can be overridden in the same way.
 
 ###### Example #1:
-All generated views extend from `ToaTwitterBootstrapBundle::layout.html.twig` that can be overridden in `/app/Resources/ToaTwitterBootstrapBundle/skeleton/crud/views/others/extends.twig.twig`.
+All generated views extend from `ToaTwitterBootstrapBundle::layout.html.twig` that can be overridden in `/app/Resources/ToaTwitterBootstrapBundle/skeleton/crud/views/others/extends.twig`.
 
 ###### Example #2:
-All generated views use the `content` block that can be overridden in `/app/Resources/ToaTwitterBootstrapBundle/skeleton/crud/views/others/block.twig.twig`.
+All generated views use the `content` block that can be overridden in `/app/Resources/ToaTwitterBootstrapBundle/skeleton/crud/views/others/block.twig`.
 
