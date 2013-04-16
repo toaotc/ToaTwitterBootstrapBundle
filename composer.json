@@ -5,7 +5,7 @@
     "type": "symfony-bundle",
     "license": "MIT",
     "require": {
-        "sensio/generator-bundle": "2.2.*"
+        "sensio/generator-bundle": ">=2.1,<2.3-dev"
     },
     "minimum-stability": "dev",
     "authors": [
