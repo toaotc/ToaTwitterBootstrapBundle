@@ -11,7 +11,7 @@ It includes a CRUD-generator based on [SensioGeneratorBundle](https://github.com
 	{
 	    "require": {
 	        // ...
-	        "toa/twitter-bootstrap-bundle": "dev-master",
+	        "toa/twitter-bootstrap-bundle": "2.2.*",
 	        // ...
 	    }
 	}
