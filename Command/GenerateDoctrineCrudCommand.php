@@ -1,49 +1,48 @@
 <?php
 
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace Toa\Bundle\TwitterBootstrapBundle\Command;
 
-use Toa\Bundle\TwitterBootstrapBundle\Generator\DoctrineCrudGenerator;
 use Sensio\Bundle\GeneratorBundle\Command\GenerateDoctrineCrudCommand as BaseGenerateDoctrineCrudCommand;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+use Sensio\Bundle\GeneratorBundle\Generator\DoctrineCrudGenerator;
 
 /**
- * Generates a CRUD for a Doctrine entity.
+ * GenerateDoctrineCrudCommand
  *
- * @author Fabien Potencier <fabien@symfony.com>
+ * @author Enrico Thies <enrico.thies@gmail.com>
  */
 class GenerateDoctrineCrudCommand extends BaseGenerateDoctrineCrudCommand
 {
-    private $generator;
-
-    /**
-     * @see Command
-     */
     protected function configure()
     {
         parent::configure();
+
         $this
             ->setName('toa:generate:twitter-bootstrap-crud')
             ->setAliases(array());
     }
 
-    protected function getGenerator()
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
-        if (null === $this->generator) {
-            $this->generator = new DoctrineCrudGenerator(
-                $this->getContainer()->get('filesystem'),
-                __DIR__.'/../Resources/skeleton/crud',
-                $this->getContainer()
-            );
+        $ref = new \ReflectionClass(new DoctrineCrudGenerator($this->getContainer()->get('filesystem'), ''));
+        $originalSkeletonDir = dirname($ref->getFileName()).'/../Resources/skeleton/crud';
+
+        $skeletonDirs = array(
+            __DIR__.'/../Resources/skeleton/crud',
+            $originalSkeletonDir
+        );
+
+        $overrideDir = $this->getContainer()->get('kernel')->getRootDir().'/Resources/ToaTwitterBootstrapBundle/skeleton/crud';
+        if (is_dir($overrideDir)) {
+            array_unshift($skeletonDirs, $overrideDir);
         }
 
-        return $this->generator;
+        $this->setGenerator(new DoctrineCrudGenerator(
+            $this->getContainer()->get('filesystem'),
+            $skeletonDirs
+        ));
+
+        parent::execute($input, $output);
     }
 }

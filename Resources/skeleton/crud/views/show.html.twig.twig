@@ -1,0 +1,38 @@
+{% include 'views/others/extends.twig.twig' %}
+
+{% include 'views/others/block.twig.twig' %}
+
+        <h1 class="page-header">{{ entity }}</h1>
+
+        <table class="record_properties table table-bordered table-condensed table-striped">
+            <tbody>
+            {%- for field, metadata in fields %}
+
+                <tr>
+                    <th>{{ field|capitalize }}</th>
+
+                {%- if metadata.type in ['date', 'datetime', 'datetimetz', 'time'] %}
+
+                    <td>{{ '{{ entity.' ~ field|replace({'_': ''}) ~ '|date(\'Y-m-d H:i:s\') }}' }}</td>
+
+                {%- elseif metadata.type == 'boolean' %}
+
+                    <td><i class="{{ '{{ entity.'~ field|replace({'_': ''}) ~' ? \'icon-check\' : \'\' }}' }}"></i></td>
+
+                {%- else %}
+
+                    <td>{{ '{{ entity.' ~ field|replace({'_': ''}) ~ ' }}' }}</td>
+
+                {%- endif %}
+
+                </tr>
+
+            {%- endfor %}
+
+            </tbody>
+        </table>
+
+        {%- set hide_edit, hide_delete = false, false %}
+        {%- include 'views/others/record_actions.html.twig.twig' %}
+
+{{ "{% endblock %}" }}

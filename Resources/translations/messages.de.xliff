@@ -3,28 +3,44 @@
     <file source-language="en" datatype="plaintext" original="file.ext">
         <body>
             <trans-unit id="1">
+                <source>back to the list</source>
+                <target>zurück zur Liste</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>cancel</source>
+                <target>abbrechen</target>
+            </trans-unit>
+            <trans-unit id="3">
                 <source>create</source>
                 <target>erstellen</target>
             </trans-unit>
-            <trans-unit id="2">
-                <source>show</source>
-                <target>anzeigen</target>
-            </trans-unit>
-            <trans-unit id="3">
-                <source>edit</source>
-                <target>bearbeiten</target>
-            </trans-unit>
             <trans-unit id="4">
-                <source>delete</source>
-                <target>löschen</target>
-            </trans-unit>
-            <trans-unit id="5">
                 <source>create a new entry</source>
                 <target>einen neuen Eintrag erstellen</target>
             </trans-unit>
+            <trans-unit id="5">
+                <source>delete</source>
+                <target>löschen</target>
+            </trans-unit>
             <trans-unit id="6">
-                <source>back to the list</source>
-                <target>zurück zur Liste</target>
+                <source>edit</source>
+                <target>bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>list</source>
+                <target>auflisten</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>save</source>
+                <target>speichern</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>show</source>
+                <target>anzeigen</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Do you really want to delete {{ entity }} "{{ id }}"?</source>
+                <target>Möchten Sie {{ entity }} "{{ id }}" wirklich löschen?</target>
             </trans-unit>
         </body>
     </file>
