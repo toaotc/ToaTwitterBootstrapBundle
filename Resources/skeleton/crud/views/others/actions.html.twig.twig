@@ -1,0 +1,12 @@
+
+                    <div class="btn-group">
+
+                    {%- for action in record_actions %}
+
+                        <a class="btn btn-mini" href="{{ "{{ path('" ~ route_name_prefix ~ "_" ~ action ~ "', { 'id': entity.id }) }}" }}">
+                            {{ "{{ '" ~ action ~ "'|trans|capitalize }}" }}
+                        </a>
+
+                    {%- endfor %}
+
+                    </div>
