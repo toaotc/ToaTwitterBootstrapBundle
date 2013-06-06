@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>back to the list</source>
+                <target>voltar para a lista</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>cancel</source>
+                <target>cancelar</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>create</source>
+                <target>novo</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>create a new entry</source>
+                <target>criar nova entrada</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>delete</source>
+                <target>deletar</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>edit</source>
+                <target>editar</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>list</source>
+                <target>listar</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>save</source>
+                <target>salvar</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>show</source>
+                <target>exibir</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Do you really want to delete {{ entity }} "{{ id }}"?</source>
+                <target>Você tem certeza que deseja excluir {{ entity }} "{{ id }}"?</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
