@@ -3,6 +3,10 @@
 This Bundle serves basic integration of [Twitter Bootstrap](http://twitter.github.com/bootstrap)(v2.2.0) into [Symfony Standard Edition](https://github.com/symfony/symfony-standard).  
 It includes a CRUD-generator based on [SensioGeneratorBundle](https://github.com/sensio/SensioGeneratorBundle).
 
+[package]: https://packagist.org/packages/toa/twitter-bootstrap-bundle
+
+[![Latest Stable Version](https://poser.pugx.org/toa/twitter-bootstrap-bundle/v/stable.png "Latest Stable Version")][package]
+[![Total Downloads](https://poser.pugx.org/toa/twitter-bootstrap-bundle/downloads.png "Total Downloads")][package]
 
 ## Installation
 
